@@ -211,29 +211,6 @@ h2.single-line-title { white-space: nowrap; }
 .contact-aside { max-width: none; justify-self: stretch; padding-bottom: 8px; }
 .contact-mark { display: block; width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid var(--coral); border-radius: 50%; color: var(--coral); font-size: 22px; }
 .contact-aside p { max-width: 300px; margin-top: 16px; color: var(--muted); font-size: 12px; line-height: 1.75; }
-.contact-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(28px, 5vw, 75px); margin-top: 58px; padding-top: 26px; border-top: 1px solid var(--ink); }
-.contact-form-panel h3, .feedback-panel h3 { font: 600 24px/1.15 var(--display); letter-spacing: -.04em; }
-.form-intro, .feedback-panel > p { max-width: 430px; margin-top: 9px; color: var(--muted); font-size: 10px; line-height: 1.7; }
-.contact-form { margin-top: 22px; }
-.form-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 20px; }
-.form-fields label, .feedback-form label { display: flex; flex-direction: column; gap: 8px; color: #58554f; font-size: 9px; font-weight: 600; }
-.form-fields label span, .feedback-form label span { color: #969087; font-weight: 400; }
-.phone-field, .message-field { grid-column: 1/-1; }
-.form-fields input, .form-fields textarea, .feedback-form input, .feedback-form textarea { width: 100%; padding: 11px 0; border: 0; border-bottom: 1px solid #cfcac0; border-radius: 0; outline: 0; color: var(--ink); background: transparent; font-size: 11px; font-weight: 400; resize: vertical; transition: border-color .2s; }
-.form-fields input:focus, .form-fields textarea:focus, .feedback-form input:focus, .feedback-form textarea:focus { border-color: var(--blue); }
-.form-fields input::placeholder, .form-fields textarea::placeholder, .feedback-form input::placeholder, .feedback-form textarea::placeholder { color: #a29d94; }
-.form-submit-row { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 20px; }
-.form-message { min-height: 18px; max-width: 350px; color: var(--muted); font-size: 9px; line-height: 1.55; }
-.form-message.status-success { color: #256b45; }
-.form-message.status-error, .form-message.status-unconfigured { color: #8a451e; }
-.feedback-panel { padding-left: clamp(0px, 2vw, 28px); border-left: 1px solid var(--line); }
-.feedback-panel h3 { margin-top: 17px; font-size: clamp(28px, 3vw, 40px); }
-.feedback-note { margin-top: 10px; color: #858078; font-size: 9px; line-height: 1.6; }
-.feedback-form { margin-top: 18px; }
-.feedback-form > label textarea { min-height: 74px; }
-.feedback-controls { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: end; margin-top: 11px; }
-.feedback-controls .button { min-height: 39px; padding-inline: 12px; gap: 12px; font-size: 9px; }
-.feedback-form > .form-message { margin-top: 10px; }
 .contact-placeholders { display: flex; flex-wrap: wrap; gap: 11px; padding: 24px 0; margin-top: 40px; border-top: 1px solid var(--line); }
 .contact-placeholders span, .contact-placeholders a { padding: 8px 11px; border: 1px dashed #c9c4bb; color: #77736b; font-size: 9px; font-weight: 600; text-decoration: none; }
 .contact-placeholders a:hover { border-color: var(--coral); color: var(--ink); }
@@ -341,8 +318,6 @@ h2.single-line-title { white-space: nowrap; }
   .journal-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 27px; }
   .journal-entry { grid-template-columns: 28px 1fr; }
   .journal-thumb { display: none; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .feedback-panel { padding: 26px 0 0; border-top: 1px solid var(--line); border-left: 0; }
   .project-page-hero { grid-template-columns: 1fr; gap: 28px; padding-top: 45px; }
   .project-detail-image { max-height: 58vw; }
 }
@@ -439,16 +414,6 @@ h2.single-line-title { white-space: nowrap; }
   .contact-topline h2 { margin-top: 14px; }
   .contact-aside { justify-self: start; display: grid; grid-template-columns: 45px 1fr; gap: 13px; align-items: center; }
   .contact-aside p { margin-top: 0; font-size: 10px; }
-  .contact-grid { gap: 33px; margin-top: 35px; padding-top: 21px; }
-  .contact-form-panel h3 { font-size: 20px; }
-  .form-fields { grid-template-columns: 1fr; gap: 13px; }
-  .phone-field, .message-field { grid-column: 1; }
-  .form-fields label { font-size: 9px; }
-  .form-submit-row { align-items: flex-start; flex-direction: column; gap: 11px; }
-  .form-message { font-size: 8px; }
-  .feedback-panel h3 { font-size: 33px; }
-  .feedback-controls { grid-template-columns: 1fr; gap: 13px; }
-  .feedback-controls .button { justify-self: start; }
   .contact-placeholders { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: 30px; }
   .contact-placeholders span, .contact-placeholders a { padding: 7px 8px; font-size: 8px; }
   .contact-placeholders small { display: block; margin: 4px 0 0; font-size: 7px; }

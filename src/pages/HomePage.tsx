@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { achievements, capabilities, experiences, motivations, projects, sourceLinks, tools } from "../data/content";
-import { ContactForm, FeedbackForm } from "../components/Forms";
 import { ProjectTile } from "../components/ProjectTile";
 import { Reveal } from "../components/Reveal";
 import { SafeImage } from "../components/SafeImage";
@@ -237,20 +236,6 @@ function HomePage() {
         <div className="contact-topline">
           <Reveal><span className="mini-kicker">Have a good problem to solve?</span><h2 id="contact-title">Let’s make<br /><em>it make sense.</em></h2></Reveal>
           <Reveal delay={100} className="contact-aside"><span className="contact-mark" aria-hidden="true">↗</span><p>Send a note about a project, a collaboration, or a question. I’ll be glad to hear from you.</p></Reveal>
-        </div>
-        <div className="contact-grid">
-          <Reveal className="contact-form-panel">
-            <h3>Start a conversation</h3>
-            <p className="form-intro">The form validates your entry. No message is sent until a delivery endpoint is connected.</p>
-            <ContactForm />
-          </Reveal>
-          <Reveal className="feedback-panel" delay={100}>
-            <span className="mini-kicker">A note on this portfolio</span>
-            <h3>Hope you like<br />what you see.</h3>
-            <p>Your feedback helps me see the work from another point of view.</p>
-            <p className="feedback-note">No feedback is sent until a feedback endpoint is connected.</p>
-            <FeedbackForm />
-          </Reveal>
         </div>
         <div className="contact-placeholders" aria-label="Profile links">
           <a href={sourceLinks.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile, opens in a new tab">LinkedIn <small>View profile ↗</small></a>
