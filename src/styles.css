@@ -206,11 +206,8 @@ h2.single-line-title { white-space: nowrap; }
 .journal-feature > img { width: 100%; height: auto; aspect-ratio: 1.5; object-fit: cover; }
 
 .contact-section { margin-top: 68px; padding-bottom: 35px; }
-.contact-topline { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(24px, 4vw, 56px); align-items: end; margin-top: 29px; }
+.contact-topline { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: end; margin-top: 29px; }
 .contact-topline h2 { margin-top: 20px; }
-.contact-aside { max-width: none; justify-self: stretch; padding-bottom: 8px; }
-.contact-mark { display: block; width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid var(--coral); border-radius: 50%; color: var(--coral); font-size: 22px; }
-.contact-aside p { max-width: 300px; margin-top: 16px; color: var(--muted); font-size: 12px; line-height: 1.75; }
 .contact-placeholders { display: flex; flex-wrap: wrap; gap: 11px; padding: 24px 0; margin-top: 40px; border-top: 1px solid var(--line); }
 .contact-placeholders span, .contact-placeholders a { padding: 8px 11px; border: 1px dashed #c9c4bb; color: #77736b; font-size: 9px; font-weight: 600; text-decoration: none; }
 .contact-placeholders a:hover { border-color: var(--coral); color: var(--ink); }
@@ -412,8 +409,6 @@ h2.single-line-title { white-space: nowrap; }
   .contact-section { margin-top: 30px; }
   .contact-topline { grid-template-columns: 1fr; gap: 23px; margin-top: 23px; }
   .contact-topline h2 { margin-top: 14px; }
-  .contact-aside { justify-self: start; display: grid; grid-template-columns: 45px 1fr; gap: 13px; align-items: center; }
-  .contact-aside p { margin-top: 0; font-size: 10px; }
   .contact-placeholders { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: 30px; }
   .contact-placeholders span, .contact-placeholders a { padding: 7px 8px; font-size: 8px; }
   .contact-placeholders small { display: block; margin: 4px 0 0; font-size: 7px; }

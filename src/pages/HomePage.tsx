@@ -235,7 +235,6 @@ function HomePage() {
         <SectionMarker label="Let’s connect" />
         <div className="contact-topline">
           <Reveal><span className="mini-kicker">Have a good problem to solve?</span><h2 id="contact-title">Let’s make<br /><em>it make sense.</em></h2></Reveal>
-          <Reveal delay={100} className="contact-aside"><span className="contact-mark" aria-hidden="true">↗</span><p>Send a note about a project, a collaboration, or a question. I’ll be glad to hear from you.</p></Reveal>
         </div>
         <div className="contact-placeholders" aria-label="Profile links">
           <a href={sourceLinks.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile, opens in a new tab">LinkedIn <small>View profile ↗</small></a>
